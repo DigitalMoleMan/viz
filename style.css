@@ -1,0 +1,144 @@
+body {
+    background-color: #000;
+    overflow: hidden;
+}
+
+#content {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#canvas {
+    position: relative;
+    margin: 0 auto;
+    width: relative;
+    height: relative;
+}
+
+#controls {
+    position: sticky;
+    float: left;
+    margin: 1em;
+    width: 27em;
+    height: 7em;
+    border-radius: .5em;
+    background-color: #111;
+}
+
+#selectedfile {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0.3em;
+    font-family: monospace;
+    overflow: hidden;
+    background-color: #222;
+    color: #fff;
+    border-radius: .5em;
+}
+
+
+audio {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 1em;
+}
+
+#upload {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: .9em;
+    height: .9em;
+}
+
+#openfile {
+    position: relative;
+    display: block;
+    float: left;
+    margin-top: .8em;
+    width: 2.7em;
+    height: 2.7em;
+    border-radius: 50%;
+    font-family: Wingdings;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.7em;
+    color: #000;
+    background-color: #fff;
+    transition: all .2s ease;
+}
+
+#openfile:hover {
+    position: relative;
+    border-radius: 25%;
+    background-color: rgb(128, 128, 128);
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+#openfile:active {
+    position: relative;
+    border-radius: 37%;
+    background-color: rgb(64, 64, 64);
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+#thefile {
+    visibility: hidden;
+    width: 0%;
+}
+
+#bottomcontainer {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3em;
+    height: 3em;
+    left: 96%;
+    bottom: 50%;
+    background-color: #000;
+}
+
+#info {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #333;
+
+    /* border */
+    border-width: 10px;
+    border-radius: 50%;
+    border-color: #fff;
+    
+    /* text */
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5em;
+
+    transition: all .2s ease;
+}
+
+#info:hover {
+    width: 1.6em;
+    height: 1.6em;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+#info:active {
+    width: 1.4em;
+    height: 1.4em;
+    font-size: 14px;
+    transition: all .2s ease;
+}

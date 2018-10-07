@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+        <div id="controls">
+                <p id="selectedfile">no file loaded</p>
+                <script type="text/javascript">
+                    function performClick(elemId) {
+                        var elem = document.getElementById(elemId);
+                        if (elem && document.createEvent) {
+                            var evt = document.createEvent("MouseEvents");
+                            evt.initEvent("click", true, false);
+                            elem.dispatchEvent(evt);
+                        }
+                    }
+                </script>
+                <audio id="audio" controls></audio>
+        
+                
+                <a id="openfile" onclick="performClick('thefile');">
+                        <div id="upload">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #000;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-width: 64px;
+                                }
+                            </style>
+                        </defs>
+                        <title>icon_upload</title>
+                        <line class="cls-1" x1="192" y1="32" x2="192" y2="256" />
+                        <line class="cls-1" x1="32" y1="352" x2="352" y2="352" />
+                        <line class="cls-1" x1="32" y1="288" x2="32" y2="352" />
+                        <line class="cls-1" x1="352" y1="288" x2="352" y2="352" />
+                        <line class="cls-1" x1="192" y1="32" x2="288" y2="128" />
+                        <line class="cls-1" x1="96" y1="128" x2="192" y2="32" />
+                    </svg>
+                    </div>
+                </a>
+                
+            </div>
+    <div id="content">
+        <canvas id="canvas" width="920px" height="810px"></canvas>
+    </div>
+
+    
+    <div id="bottomcontainer">
+        <a id="info">i</a>
+    </div>
+    <input type="file" id="thefile" accept="audio/*" />
+    <script src="script.js"></script>
+</body>
+
+</html>
